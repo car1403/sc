@@ -1,0 +1,11 @@
+server:
+  port: 9093
+  # ????? ???? ??? ?? ??
+
+spring:
+  application:
+    name: product-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9090/eureka/  # Eureka 서버의 URL을 지정

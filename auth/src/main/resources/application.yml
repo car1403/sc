@@ -1,0 +1,16 @@
+server:
+  port: 9095
+
+spring:
+  application:
+    name: auth-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9090/eureka/  # Eureka 서버의 URL을 지정
+
+service:
+  jwt:
+    access-expiration: 3600000 # 1H
+    secret-key: "VlwEyVBsYt9V7zq57TejMnVUyzblYcfPQye08f7MGVA9XkHa" # HS256
+#    secret-key: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" # HS512
