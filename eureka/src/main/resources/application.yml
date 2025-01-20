@@ -3,7 +3,7 @@ server:
 
 eureka:
   client:
-    register-with-eureka: false  # ?? Eureka ??? ? ??? ???? ??
-    fetch-registry: false   # ?? Eureka ??? ?????? ???? ??
+    register-with-eureka: false  # Do not register this server with another Eureka server
+    fetch-registry: false  # This server does not get information from other servers
   server:
-    enable-self-preservation: false   # ?? ?? ?? ????
+    enable-self-preservation: false  # Disable server self-protection mode

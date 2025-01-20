@@ -14,7 +14,10 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true)
-public class AuthConfig {
+public class SecurityConfig {
+
+    private static final String[] whitelist = {"/", "/auth/sign", "/auth/login", "/auth/logout"};
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         //CSRF, CORS
@@ -32,7 +35,7 @@ public class AuthConfig {
 
         // 권한 규칙 작성
         http.authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/auth/signIn").permitAll()
+                        .requestMatchers(whitelist).permitAll()
 //                        .anyRequest().permitAll()
                         .anyRequest().authenticated()
         );

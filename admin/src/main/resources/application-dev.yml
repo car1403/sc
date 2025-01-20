@@ -1,0 +1,42 @@
+# 1. Tomcat Server Setting
+server:
+  port: 81
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+
+#  ssl:
+#    enabled: true
+#    key-store: classpath:keystore.p12  # 인증서 파일 경로 <- keystore.p12를
+#    # src/main/resources밑에 뒀다면 경로 수정 X
+#    key-store-password: 111111  # 인증서 생성 시 설정한 비밀번호
+#    key-store-type: PKCS12  # 인증서 형식
+
+
+# 2. SpringBoot Environment Setting
+spring:
+  application:
+    name: admin
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  logging:
+    level:
+      root: info
+      #  error > info > debug
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/smdb?characterEncoding=utf8
+#    username: ENC(OAjB56HlNziHqNDu8ZFSAw==)
+#    password: ENC(zYoWFnp8CokAEj/HgST7Tw==)
+
+
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9090/eureka/  # Eureka 서버의 URL을 지정
