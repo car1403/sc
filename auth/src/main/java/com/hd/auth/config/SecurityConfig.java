@@ -16,7 +16,7 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 @EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true)
 public class SecurityConfig {
 
-    private static final String[] whitelist = {"/", "/auth/sign", "/auth/login", "/auth/logout"};
+    private static final String[] whitelist = {"/", "/auth/**"};
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {

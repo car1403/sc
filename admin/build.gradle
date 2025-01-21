@@ -51,9 +51,10 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.11.0'
     implementation group: 'org.json', name: 'json', version: '20240303'
 
-
+    // Security
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
     // JSP Security Tag Library
     implementation 'org.springframework.security:spring-security-taglibs'
 

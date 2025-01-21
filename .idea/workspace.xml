@@ -5,48 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2556ea-e5ce-4b75-a4a1-6300ca473938" name="Changes" comment="SpringCloud SpringGateway">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/admin.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/config/JpaAuditingConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/login/entity/Authority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/login/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/login/entity/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/login/repository/UsersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/login/service/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/accessError.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/info.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/signup.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/test/java/com/hd/UserAddTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/login/entity/Authority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/login/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/login/entity/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/login/repository/UsersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/login/service/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/webapp/WEB-INF/views/accessError.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/webapp/WEB-INF/views/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/webapp/WEB-INF/views/info.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/main/webapp/WEB-INF/views/signup.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin2/src/test/java/com/hd/UserAddTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/admin/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/hd/controller/AdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/hd/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/hd/auth/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/hd/auth/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scg/src/main/java/com/hd/scg/filter/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/scg/src/main/java/com/hd/scg/filter/JwtAuthenticationFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +116,7 @@
     "Spring Boot.ScgApplication.executor": "Run",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/sc/admin/src/main/java/com/hd",
+    "last_opened_file_path": "D:/hdi",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -190,7 +151,7 @@
       <recent name="com.hd.login.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserAddTest (1)">
+  <component name="RunManager" selected="Spring Boot.ProductApplication">
     <configuration name="UserAddTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -327,15 +288,6 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Admin2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="admin2.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hd.Admin2Application" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/admin2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="admin.main" />
@@ -396,7 +348,6 @@
       <item itemvalue="Gradle.admin [classes]" />
       <item itemvalue="Gradle.admin [clean]" />
       <item itemvalue="Gradle.product [clean]" />
-      <item itemvalue="Spring Boot.Admin2Application" />
       <item itemvalue="Spring Boot.AuthApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.OrderApplication" />
@@ -406,8 +357,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UserAddTest (1)" />
         <item itemvalue="Spring Boot.AdminApplication" />
+        <item itemvalue="Gradle.UserAddTest (1)" />
         <item itemvalue="Gradle.admin [classes]" />
         <item itemvalue="Gradle.admin [clean]" />
         <item itemvalue="Gradle.product [clean]" />
@@ -433,7 +384,8 @@
       <workItem from="1736993618474" duration="57365000" />
       <workItem from="1737356974102" duration="294000" />
       <workItem from="1737357281049" duration="5328000" />
-      <workItem from="1737418098993" duration="13213000" />
+      <workItem from="1737418098993" duration="13371000" />
+      <workItem from="1737438002992" duration="2109000" />
     </task>
     <task id="LOCAL-00001" summary="SpringCloud SpringGateway">
       <option name="closed" value="true" />
@@ -451,7 +403,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737348085588</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="SpringCloud SpringGateway">
+      <option name="closed" value="true" />
+      <created>1737436682022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737436682022</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

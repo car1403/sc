@@ -21,7 +21,7 @@ import javax.crypto.SecretKey;
 @Slf4j
 public class JwtAuthenticationFilter implements GlobalFilter{
 
-    private static final String[] whitelist = {"/", "/auth/sign", "/auth/login", "/auth/logout"};
+    private static final String[] whitelist = {"/", "/auth/**"};
 
 
     @Value("${service.jwt.secret-key}")
