@@ -23,7 +23,7 @@
 
 
     <sec:authorize access="hasAuthority('ROLE_ADMIN') or hasAuthority('ROLE_USER')"><a href="/info">내정보</a></sec:authorize><br>
-    <sec:authorize access="hasAuthority('ROLE_ADMIN')"><a href="/order">GET Order</a></sec:authorize><br>
-    <sec:authorize access="hasAuthority('ROLE_ADMIN')"><a href="/orderall">GET Order All</a></sec:authorize><br>
+    <sec:authorize access="hasAuthority('ROLE_ADMIN')"><a href="/admin">admin</a></sec:authorize><br>
+
 </body>
 </html>

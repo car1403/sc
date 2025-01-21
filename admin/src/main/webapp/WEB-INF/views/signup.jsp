@@ -7,17 +7,12 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Admin Login</h1>
-    <form action="/auth/login-process" method="post">
+    <h1>SignUp Page</h1>
+    <form action="/login-process" method="post">
         ID<input type="text" name="userid"><br>
         PWD<input type="password" name="pwd"><br>
         <input type="submit" value="LOGIN"><br>
     </form>
-    <c:if test="${proc == '2'}">
-        <h4>LOGIN FAIL Someone is logged in.</h4>
-    </c:if>
-    <c:if test="${proc == '1'}">
-        <h4>LOGIN FAIL Try Again.</h4>
-    </c:if>
+
 </body>
 </html>

@@ -1,6 +1,6 @@
 # 1. Tomcat Server Setting
 server:
-  port: 81
+  port: 82
   servlet:
     session:
       timeout: 10m
@@ -19,7 +19,7 @@ server:
 # 2. SpringBoot Environment Setting
 spring:
   application:
-    name: admin
+    name: admin2
   mvc:
     view:
       prefix: /WEB-INF/views/
@@ -28,6 +28,8 @@ spring:
     level:
       root: info
   datasource:
+    #    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    #    url: jdbc:log4jdbc:mysql://127.1.0.1:3306/smdb?characterEncoding=utf8
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/smdb?characterEncoding=utf8
     username: smuser
@@ -46,12 +48,9 @@ spring:
       enabled: always
 
 app:
-   key:
+  key:
     algo: PBEWithMD5AndDES
     skey: mykey
-
-
-
 
 
 eureka:

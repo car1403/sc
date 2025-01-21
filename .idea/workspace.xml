@@ -6,12 +6,47 @@
   <component name="ChangeListManager">
     <list default="true" id="ea2556ea-e5ce-4b75-a4a1-6300ca473938" name="Changes" comment="SpringCloud SpringGateway">
       <change afterPath="$PROJECT_DIR$/.idea/modules/admin.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/config/JpaAuditingConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/login/entity/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/login/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/login/entity/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/login/repository/UsersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/login/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/accessError.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/signup.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/test/java/com/hd/UserAddTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/login/entity/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/login/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/login/entity/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/login/repository/UsersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/java/com/hd/login/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/webapp/WEB-INF/views/accessError.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/webapp/WEB-INF/views/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/webapp/WEB-INF/views/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/main/webapp/WEB-INF/views/signup.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin2/src/test/java/com/hd/UserAddTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/auth.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/admin/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/hd/controller/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/hd/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +57,13 @@
     <projectState path="$PROJECT_DIR$/admin">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/admin2">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/auth">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/demo">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/eureka">
@@ -47,25 +88,12 @@
         <task path="$PROJECT_DIR$/admin">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/admin2">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="admin" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="admin" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="admin" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -75,17 +103,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2rgvd0gUGj8S8ebrJSXxmC1cicg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -95,12 +123,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build admin.executor": "Run",
+    "Gradle.Build admin2.executor": "Run",
     "Gradle.Build auth.executor": "Run",
+    "Gradle.Build demo.executor": "Run",
     "Gradle.Build eureka.executor": "Run",
     "Gradle.Build order.executor": "Run",
     "Gradle.Build product.executor": "Run",
     "Gradle.Build scg.executor": "Run",
+    "Gradle.UserAddTest (1).executor": "Run",
+    "Gradle.UserAddTest.executor": "Debug",
     "Gradle.admin [build].executor": "Run",
+    "Gradle.admin [classes].executor": "Run",
     "Gradle.admin [clean].executor": "Run",
     "Gradle.product [bootJar].executor": "Run",
     "Gradle.product [clean].executor": "Run",
@@ -111,9 +144,11 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.Admin2Application.executor": "Run",
     "Spring Boot.AdminApplication (1).executor": "Run",
     "Spring Boot.AdminApplication.executor": "Run",
     "Spring Boot.AuthApplication.executor": "Run",
+    "Spring Boot.DemoApplication.executor": "Run",
     "Spring Boot.EurekaApplication.executor": "Run",
     "Spring Boot.OrderApplication.executor": "Run",
     "Spring Boot.ProductApplication.executor": "Run",
@@ -132,20 +167,101 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\sc\admin\src\main\java\com\hd" />
-      <recent name="D:\sc\admin\src\main\resources" />
+      <recent name="D:\sc\admin\src\main\webapp\WEB-INF\views" />
+      <recent name="D:\sc\admin2\src\main\webapp\WEB-INF\views" />
+      <recent name="D:\sc\admin2\src\main\java\com\hd\login" />
       <recent name="D:\sc\order\src\main\java\com\hd\order" />
-      <recent name="D:\sc\order\src\main\resources" />
-      <recent name="D:\sc\auth\src\main\java\com\hd\auth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\sc\admin\src\main\webapp\WEB-INF" />
+      <recent name="D:\sc\demo\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hd.config" />
+      <recent name="com.hd" />
+      <recent name="com.hd.controller" />
+      <recent name="com.hd.login.handler" />
+      <recent name="com.hd.login.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AdminApplication (1)">
-    <configuration name="admin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.UserAddTest (1)">
+    <configuration name="UserAddTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/admin" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.hd.UserAddTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserAddTest" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/admin2" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.hd.UserAddTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="admin [build]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/admin" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="admin [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/admin" />
@@ -156,7 +272,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="classes" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,28 +305,6 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="product [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/product" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="bootJar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="product [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -233,24 +327,26 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AdminApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="Admin2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="admin2.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hd.Admin2Application" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/admin2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="admin.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hd.AdminApplication" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/admin" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="admin.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hd.admin.AdminApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -293,13 +389,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.admin [build]" />
+      <item itemvalue="Gradle.UserAddTest" />
+      <item itemvalue="Gradle.UserAddTest (1)" />
+      <item itemvalue="Gradle.admin [classes]" />
+      <item itemvalue="Gradle.admin [clean]" />
+      <item itemvalue="Gradle.product [clean]" />
+      <item itemvalue="Spring Boot.Admin2Application" />
+      <item itemvalue="Spring Boot.AuthApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.OrderApplication" />
+      <item itemvalue="Spring Boot.ProductApplication" />
+      <item itemvalue="Spring Boot.ScgApplication" />
+      <item itemvalue="Spring Boot.AdminApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AdminApplication (1)" />
-        <item itemvalue="Gradle.admin [build]" />
+        <item itemvalue="Gradle.UserAddTest (1)" />
+        <item itemvalue="Spring Boot.AdminApplication" />
+        <item itemvalue="Gradle.admin [classes]" />
         <item itemvalue="Gradle.admin [clean]" />
         <item itemvalue="Gradle.product [clean]" />
-        <item itemvalue="Gradle.product [bootJar]" />
       </list>
     </recent_temporary>
   </component>
@@ -319,7 +430,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1736993617344</updated>
-      <workItem from="1736993618474" duration="32510000" />
+      <workItem from="1736993618474" duration="57365000" />
+      <workItem from="1737356974102" duration="294000" />
+      <workItem from="1737357281049" duration="5328000" />
+      <workItem from="1737418098993" duration="13213000" />
     </task>
     <task id="LOCAL-00001" summary="SpringCloud SpringGateway">
       <option name="closed" value="true" />
@@ -329,7 +443,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737084695590</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SpringCloud SpringGateway">
+      <option name="closed" value="true" />
+      <created>1737348085588</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737348085588</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

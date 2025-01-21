@@ -24,32 +24,22 @@ repositories {
     mavenCentral()
     maven { url 'https://repo.spring.io/snapshot' }
 }
+
 ext {
     set('springCloudVersion', "2023.0.5")
 }
 
 dependencies {
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
-    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 
-
-    implementation 'org.springframework.boot:spring-boot-starter-web'
+    //implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    //implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-
-    //tomcat
-    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
-    implementation 'jakarta.servlet:jakarta.servlet-api'
-    implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api'
-    implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl'
-
-    // JSON
-    implementation 'com.google.code.gson:gson:2.11.0'
-    implementation group: 'org.json', name: 'json', version: '20240303'
 
 
     implementation 'org.springframework.boot:spring-boot-starter-security'
@@ -57,17 +47,27 @@ dependencies {
     // JSP Security Tag Library
     implementation 'org.springframework.security:spring-security-taglibs'
 
+    //tomcat
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    implementation 'jakarta.servlet:jakarta.servlet-api'
+    implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api'
+    implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl'
+
     // 양방향 암호화
     implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.3'
 
+    // JSON
+    implementation 'com.google.code.gson:gson:2.11.0'
+    implementation group: 'org.json', name: 'json', version: '20240303'
+
     // 3. MySQL Driver
     implementation 'com.mysql:mysql-connector-j:8.1.0'
-
-
     // 4. JPA
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-}
 
+    // 5. H2DB
+//    runtimeOnly 'com.h2database:h2'
+}
 
 dependencyManagement {
     imports {
@@ -78,4 +78,3 @@ dependencyManagement {
 tasks.named('test') {
     useJUnitPlatform()
 }
-
