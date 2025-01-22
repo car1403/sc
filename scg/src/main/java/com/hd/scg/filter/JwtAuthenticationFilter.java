@@ -40,11 +40,10 @@ public class JwtAuthenticationFilter implements GlobalFilter{
         }
         String token = extractToken(exchange);
 
-        if(token == null ){
+        if(token == null || !validateToken(token)){
             throw new SecurityException("UNAUTHORIZED");
-        }else{
-            validateToken(token);
         }
+
         return chain.filter(exchange);
     }
     private boolean isLoginCheckPath(String requestURI) {
