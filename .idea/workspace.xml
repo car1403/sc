@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea2556ea-e5ce-4b75-a4a1-6300ca473938" name="Changes" comment="SpringCloud SpringGateway">
-      <change afterPath="$PROJECT_DIR$/scg/src/main/java/com/hd/scg/exception/GatewayErrorWebExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scg/src/main/java/com/hd/scg/filter/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/scg/src/main/java/com/hd/scg/filter/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scg/src/main/java/com/hd/scg/filter/PostFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/scg/src/main/java/com/hd/scg/filter/PostFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/hd/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/hd/feign/GetOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/feign/GetOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/hd/service/FeignService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/service/FeignService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/hd/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/hd/order/controller/OrderController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +153,7 @@
       <recent name="com.hd.login.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ScgApplication">
+  <component name="RunManager" selected="Spring Boot.AdminApplication">
     <configuration name="UserAddTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -386,7 +387,7 @@
       <workItem from="1737356974102" duration="294000" />
       <workItem from="1737357281049" duration="5328000" />
       <workItem from="1737418098993" duration="13371000" />
-      <workItem from="1737438002992" duration="8841000" />
+      <workItem from="1737438002992" duration="13663000" />
     </task>
     <task id="LOCAL-00001" summary="SpringCloud SpringGateway">
       <option name="closed" value="true" />
@@ -420,7 +421,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737440803574</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="SpringCloud SpringGateway">
+      <option name="closed" value="true" />
+      <created>1737521409939</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737521409939</updated>
+    </task>
+    <task id="LOCAL-00006" summary="SpringCloud SpringGateway">
+      <option name="closed" value="true" />
+      <created>1737521972349</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737521972349</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

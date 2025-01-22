@@ -25,10 +25,10 @@ public class FeignService {
     private final GetProduct getProduct;
     private final ObjectMapper objectMapper;
 
-    public Object getOrder() throws IOException {
+    public Object getOrder(Long id) throws IOException {
         Gson gson = new Gson();
 
-        JsonNode jsonNode = objectMapper.readTree(gson.toJson(getOrder.get()));
+        JsonNode jsonNode = objectMapper.readTree(gson.toJson(getOrder.get(id)));
         OrderResponseDto orderResponseDto = objectMapper.readValue(jsonNode.get("data").toString(), OrderResponseDto.class);
 
         return orderResponseDto;

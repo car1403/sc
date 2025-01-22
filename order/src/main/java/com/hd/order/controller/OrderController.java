@@ -13,6 +13,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -35,8 +36,8 @@ public class OrderController {
             @ApiResponse(responseCode = "400", description = "name 또는 price 입력 오류", content = @Content(schema = @Schema(implementation = Body.class))),
             @ApiResponse(responseCode = "500", description = "name 중복 오류 ", content = @Content(schema = @Schema(implementation = Body.class))),
     })
-    @GetMapping("/get")
-    public ResponseEntity<?> getOrder(){
+    @GetMapping("/get/{id}")
+    public ResponseEntity<?> getOrder(@PathVariable("id") Long id){
         OrderResponseDto order = OrderResponseDto.builder()
                 .id(100L)
                 .name("Pants")

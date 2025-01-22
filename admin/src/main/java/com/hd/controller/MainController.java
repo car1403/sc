@@ -36,7 +36,7 @@ public class MainController {
     }
     @GetMapping("/order")
     public String order(Model model) throws IOException {
-        model.addAttribute("order", feignService.getOrder());
+        model.addAttribute("order", feignService.getOrder(100L));
         model.addAttribute("product", feignService.getProduct());
         return "order";
     }
