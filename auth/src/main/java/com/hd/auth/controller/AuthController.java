@@ -27,12 +27,5 @@ public class AuthController {
     public ResponseEntity<?> logout(@RequestParam String user_id){
         return ResponseEntity.ok("Logout ID: "+user_id);
     }
-    /*
-    @Data
-    @AllArgsConstructor
-    @NoArgsConstructor
-    static class AuthResponse {
-        private String access_token;
-    }
-    */
+
 }

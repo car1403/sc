@@ -8,13 +8,16 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
+import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.util.PatternMatchUtils;
+import org.springframework.web.reactive.function.server.ServerResponse;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 import javax.crypto.SecretKey;
+import java.nio.charset.StandardCharsets;
 
 
 @Component
@@ -28,18 +31,19 @@ public class JwtAuthenticationFilter implements GlobalFilter{
     private String secretKey;
 
     @Override
-    public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
+    public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) throws SecurityException {
+        log.info("JwtAuthenticationFilter");
         String requestURI = exchange.getRequest().getURI().getPath();
         if (isLoginCheckPath(requestURI)) {
             log.info("requestURI: {}", requestURI);
-
             return chain.filter(exchange);
         }
         String token = extractToken(exchange);
 
-        if(token == null || !validateToken(token)){
-            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
-            return exchange.getResponse().setComplete();
+        if(token == null ){
+            throw new SecurityException("UNAUTHORIZED");
+        }else{
+            validateToken(token);
         }
         return chain.filter(exchange);
     }
@@ -61,15 +65,19 @@ public class JwtAuthenticationFilter implements GlobalFilter{
             Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token);
             log.info("Payload::"+claims.getBody().toString());
             return true;
-        } catch (io.jsonwebtoken.security.SecurityException | MalformedJwtException e) {
+        } catch (io.jsonwebtoken.security.SecurityException | MalformedJwtException e ) {
             log.info("Invalid JWT Token", e);
+            throw new SecurityException("INVALID_TOKEN");
         } catch (ExpiredJwtException e) {
             log.info("Expired JWT Token", e);
+            throw new SecurityException("EXPIRED");
         } catch (UnsupportedJwtException e) {
             log.info("Unsupported JWT Token", e);
+            throw new SecurityException("UNSUPPORTED_TOKEN");
         } catch (IllegalArgumentException e) {
             log.info("JWT claims string is empty.", e);
+            throw new SecurityException("JWT claims string is empty");
         }
-        return false;
+//        return false;
     }
 }
