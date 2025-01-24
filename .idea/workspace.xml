@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ea2556ea-e5ce-4b75-a4a1-6300ca473938" name="Changes" comment="SpringCloud SpringGateway">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/hd/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/hd/feign/GetOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/feign/GetOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/hd/service/FeignService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/hd/service/FeignService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/hd/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/hd/order/controller/OrderController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +114,7 @@
     "Spring Boot.ScgApplication.executor": "Run",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/hdi",
+    "last_opened_file_path": "D:/sc",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -387,7 +383,8 @@
       <workItem from="1737356974102" duration="294000" />
       <workItem from="1737357281049" duration="5328000" />
       <workItem from="1737418098993" duration="13371000" />
-      <workItem from="1737438002992" duration="13663000" />
+      <workItem from="1737438002992" duration="17890000" />
+      <workItem from="1737685059703" duration="896000" />
     </task>
     <task id="LOCAL-00001" summary="SpringCloud SpringGateway">
       <option name="closed" value="true" />
@@ -437,7 +434,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737521972349</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="SpringCloud SpringGateway">
+      <option name="closed" value="true" />
+      <created>1737533061799</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737533061799</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
